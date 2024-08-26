@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import Container from "./Container";
+
 import { useState } from "react";
 
 
@@ -31,8 +31,8 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 w-full bg-slate-200 shadow-sm z-30">
       <div className="py-4 border-b-[1px]">
-        <Container>
-          <div className="flex items-center justify-between gap-3 md:gap-0">
+            <div className="container mx-auto">
+            <div className="flex items-center justify-between gap-3 md:gap-0">
             <Link href="/" className="font-bold text-2xl">
               Bijoy24
             </Link>
@@ -68,7 +68,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </Container>
+            </div>
+          
+        
       </div>
     </div>
     );
